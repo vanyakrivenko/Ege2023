@@ -1,9 +1,10 @@
 A = int(input())
 B = int(input())
 C = int(input())
-Size = A*B
-Side = Size // C
-Square = Side**2
-Miss_sq = Size - Square
-print(Square, Miss_sq)
+A_Side = A // C
+B_Side = B // C
+Squares = B_Side * A_Side
+Square_all = A*B
+White_square = Square_all - C*C*Squares
+print(Squares, White_square)
 
